@@ -114,3 +114,12 @@ sudo python3 ./seeker.sh
 
 É importante ligar o ngrok antes na porta 8080 (a que o seeker usa)
 sudo ngrok http 8080
+
+  ## Camuflando link ##
+
+Com o URLSpoof
+sudo git clone https://github.com/Darkmux/URLSpoof.git
+cd URLSpoof
+chmod 777 urlspoof.sh
+bash urlspoof.sh
+urlspoof (para executar)
