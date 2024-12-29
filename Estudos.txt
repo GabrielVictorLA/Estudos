@@ -140,3 +140,15 @@ cat /etc/os-release
 #Reinstall Package Manager
 sudo apt-get install --reinstall apt
 
+----------------------------------------------------------------------------------
+
+  ## Site na DarkWeb ##
+Vídeo ( https://www.youtube.com/watch?v=2ECSzS4zTXY&t=215s )
+É necessário baixar o OnionShare ( https://onionshare.org )
+
+Entrando no OnionShare, conecta na rede Tor e seleciona "Host a Website"
+Enviar o aquivo index em html, ou seja, o código fonte do site para o OnionShare
+
+Pesquisar mais a fundo configurações, remoções de metadados, privacidade para n ter riscos... 
+
+#makereal.tidraw.com (cria um projeto simples de site em html)
