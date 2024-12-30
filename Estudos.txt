@@ -152,3 +152,21 @@ Enviar o aquivo index em html, ou seja, o código fonte do site para o OnionShar
 Pesquisar mais a fundo configurações, remoções de metadados, privacidade para n ter riscos... 
 
 #makereal.tidraw.com (cria um projeto simples de site em html)
+
+-------------------------------------------------------------------------------------------------------
+
+  ## Estudos de programas ##
+
+#Nmap#
+Vídeo: https://www.youtube.com/watch?v=D75tnl4iEJk
+Usado para o scaneamento de rede e procura de vulnerabilidades
+Site usado para testes pelo nmap: scanme.namp.org
+$ nmap scanme.nmap.org (scanea todas as portas de um site, scan puro e agressivo)
+$ nmap -h
+Parametros do nmap
+-iL (lê arquivo txt)
+-iR (Em uma rede com 220 dispositivos eu seleciono 5 dispositivos e testa os)
+--exclude (seleciona um dispositivo pra n rodar)
+--excludefile
+-sL (traz uma lista simples de quais Hosts tem na rede)
+-p 
