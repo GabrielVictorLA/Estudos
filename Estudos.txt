@@ -178,4 +178,4 @@ Parametros do nmap
 -O (indentifia o sistema operacional que está rodando, as vezes até o kernel, tem muito kernel vulnerável)
 -6 (se estiver fazendo scan numa rede ipv6, esse comando serve para ativar o ipv6)
 -A (muito usável, detecta sistema operacional, detecta versão, roda script, roda um traceroute para saber em quais rotas o host tá passando
-
+-sP (ping swip, traz só as máquinas que estão ligadas)
