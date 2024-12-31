@@ -168,5 +168,14 @@ Parametros do nmap
 -iR (Em uma rede com 220 dispositivos eu seleciono 5 dispositivos e testa os)
 --exclude (seleciona um dispositivo pra n rodar)
 --excludefile
--sL (traz uma lista simples de quais Hosts tem na rede)
--p 
+-sL (traz uma lista simples de quais Hosts tem na rede antes de trazer as portas)
+-p (scan de portas) -p22 (scanea apenas a 22 para saber se está aberta)
+--top-ports (Pesquias portas mais utilizadas pelo nmap) --top-ports10 (top 10 portas usadas no nmap)
+--port-ratio (Pesquisa por portas fora do comum) --port-ratio 445,6050 (procura todas nesse intervalo)
+-r (não randomizar, 80, 81, 82...) (Sem o -r fica aleatório, 82, 90, 81, 8080)
+--exclude-ports (Exclui portas que não quero achar) --exclude-ports 22 (não vou procurar pela 22)
+-sV (Vejo a versão de determinado serviço, se eu sei que tal versão tem alguma falha é importante)
+-O (indentifia o sistema operacional que está rodando, as vezes até o kernel, tem muito kernel vulnerável)
+-6 (se estiver fazendo scan numa rede ipv6, esse comando serve para ativar o ipv6)
+-A (muito usável, detecta sistema operacional, detecta versão, roda script, roda um traceroute para saber em quais rotas o host tá passando
+
