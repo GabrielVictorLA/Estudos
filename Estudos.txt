@@ -179,6 +179,7 @@ Parametros do nmap
 -6 (se estiver fazendo scan numa rede ipv6, esse comando serve para ativar o ipv6)
 -A (muito usável, detecta sistema operacional, detecta versão, roda script, roda um traceroute para saber em quais rotas o host tá passando
 -sP (ping swip, traz só as máquinas que estão ligadas)
+-T (escolhe a velocidade do processamento, de 0 a 5, o 5 é mais rápido e mais agressivo, pode até derrubar um site fraco, o 0 é lento e bem menos agressivo)(Recomendado o 3)
 
 Usando:
 
@@ -204,5 +205,14 @@ $ nmap 192.168.0.13 -A (-A é o Agressive Scan, não funciona com o Fast, -sV e 
 
 $ nmap 192.168.1.13 -p 80,8443 -sV (vou ver as versões dos serviços na porta 80 e 8443)
 
+$ nmap 192.168.1.13 -p T:80,U:95 (T = TCP e U = UDP, informações debaixo do OBS)
 
-obs: Achar no hostscript o smb2 (samba). há muitas vulnerabilidades no serviço do samba(porta 445) 
+
+
+
+OBS: 
+- Achar no hostscript o smb2 (samba). há muitas vulnerabilidades no serviço do samba(porta 445) 
+- Protocolo TCP é um protocolo que garante a  entregar, não importa em que momento mas vai
+- Protocolo UDP envia a entrega mas não garante que vai chegar
+- Protocolos http e https precisam garantir a entrega então funcionam no protocolo TCP
+- Alguns sites tem proteção de IPS (Intrusion Prevencion system: Bloqueia a entrada de um invasor no sistema), IDS (Intrusion Detection System: Indentifica alguma tentativa de intrusion, fácil de perceber em ataques agressivos (-A)) y WAF (Web Application Firewall:Bloqueia um SQL injection por exemplo, ou um script do nmap que ele acha que pode ser prejudicial)
