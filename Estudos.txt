@@ -179,3 +179,30 @@ Parametros do nmap
 -6 (se estiver fazendo scan numa rede ipv6, esse comando serve para ativar o ipv6)
 -A (muito usável, detecta sistema operacional, detecta versão, roda script, roda um traceroute para saber em quais rotas o host tá passando
 -sP (ping swip, traz só as máquinas que estão ligadas)
+
+Usando:
+
+$ ip addr show (ver qual rede estou 192.168.1.15/24) 
+$ nmap 192.168.1.1/24 -sP (vou varrer os 254 endereços)(-sP é para pingar todos os hosts ligados)
+$ nmap 192.168.1.* -sP (varre todos os endereços possíveis)
+$ nmap 192.168.1.12 (verifica as portas abertas desse host)
+$ nmap 192.168.1.1-13 (verifica todas as portas abertas dos hosts 1 ao 13)
+$ nmap 192.168.1.* (verifica todas as portas dos hosts possíveis)
+criar arquivo maquinas.txt e digitar todas as máquinas que achei ligadas
+ex:
+$ sudo maquinas.txt
+192.168.1.1
+192.168.1.2
+192.168.1.12
+salvar + exit
+$ nmap -iL maquinas.txt -F (-iL para ler arquivos .txt e -F para Fast)(O modo fast ler apenas 100 portas ao invés de 1000)
+$ nmap 192.168.1.13 -sV -p 80 (-sV vou ver a versão de determinado serviço)(-p 80 vou analisar só a porta 80)
+$ nmap 192.168.1.13 -sV -p 80 -O (-O ele procura o sistema operacional, precisa de root e não é exato, dificlmente acerta)
+(sacada para descobrir o sistema operacional, TTL=128 é windows, TTL=64 ou 62 é Linux)
+
+$ nmap 192.168.0.13 -A (-A é o Agressive Scan, não funciona com o Fast, -sV e o -O, ele já faz o -sV e o -O)(Ele é muito agressivo e faz muito barulho na outra ponta)
+
+$ nmap 192.168.1.13 -p 80,8443 -sV (vou ver as versões dos serviços na porta 80 e 8443)
+
+
+obs: Achar no hostscript o smb2 (samba). há muitas vulnerabilidades no serviço do samba(porta 445) 
