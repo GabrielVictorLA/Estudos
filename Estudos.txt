@@ -216,3 +216,4 @@ OBS:
 - Protocolo UDP envia a entrega mas não garante que vai chegar
 - Protocolos http e https precisam garantir a entrega então funcionam no protocolo TCP
 - Alguns sites tem proteção de IPS (Intrusion Prevencion system: Bloqueia a entrada de um invasor no sistema), IDS (Intrusion Detection System: Indentifica alguma tentativa de intrusion, fácil de perceber em ataques agressivos (-A)) y WAF (Web Application Firewall:Bloqueia um SQL injection por exemplo, ou um script do nmap que ele acha que pode ser prejudicial)
+#- https://www.exploit-db.com/ (Site onde contem vários exploits já documentados que mostram falha em uma determinada versão)

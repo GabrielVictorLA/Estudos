@@ -1,0 +1,31 @@
+       ## Medicamentos ## 
+
+# Pressão Arterial Sistólica
+Losartano 50mg de 12 em 12 horas (Eleva pressão)
+Hidroclorotiazina 25mg de 12 em 12 horas (Eleva pressão)(Causa Poliúria)
+Amilorida (retem K+ em casos de Poliúria)
+Hidralazina (controle agudo da pressão)(vasodilatador)
+ 
+# Analgésico Antiinflamatório
+Beta 30
+
+# Dor
+Pregabalina 75g 1 comprimido de 24 em 24 horas 
+
+# Antibiótico
+Cefalexina (Gram+ e Gram-)(Recomendado para gestantes 6 em 6 horas)
+
+# Gripe
+Koid D
+
+# Ansiedade
+Venlafaxina (indicado em menopausa)
+
+# Antidepressivo
+
+# Anticoagulante
+Riboxabana 20mg 1 comprimido 1 vezes ao dia (anticoagulante)
+Aspirina Prevent 100mg 1 comprimido 1 vez ao dia (anticoagulante)
+
+# Tireoide
+Levotiroxina 
