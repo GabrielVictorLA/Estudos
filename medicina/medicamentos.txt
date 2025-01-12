@@ -1,10 +1,11 @@
        ## Medicamentos ## 
 # Pressão Arterial Sistólica
-Losartano 50mg de 12 em 12 horas (Eleva pressão)
-Hidroclorotiazina 25mg de 12 em 12 horas (Eleva pressão)(Causa Poliúria)
+Losartana potássica 50mg de 12 em 12 horas (anti-hipertensivo)
+Hidroclorotiazina 25mg de 12 em 12 horas (anti-hipertensivo)(Causa Poliúria)
 Amilorida (retem K+ em casos de Poliúria)
 Hidralazina (controle agudo da pressão)(vasodilatador)
- 
+Enalapril (controle da hipertensão)
+
 # Analgésico Antiinflamatório
 Beta 30
 
@@ -12,6 +13,10 @@ Beta 30
 Pregabalina 75g 1 comprimido de 24 em 24 horas 
 Revange (Analgesico)
 Dipirona 1 frasco-ampola ev diluido p/10cc 1 comprimido 8/8 horas oral
+Carbamazepina dor de cabeça cronica e transorno de humor afetivo
+
+#Protetor gástrico
+Lanzoprasol
 
 # Antibiótico
 Cefalexina (Gram+ e Gram-)(Recomendado para gestantes 6 em 6 horas)
@@ -29,12 +34,18 @@ Riboxabana 20mg 1 comprimido 1 vezes ao dia (anticoagulante)
 Aspirina Prevent 100mg 1 comprimido 1 vez ao dia (anticoagulante)
 
 # Tireoide
-Levotiroxina 1oomg 1 comp 24/24 horas Tomar 1 comprimido 1 hora antes do café da manhã
- 
+Levotiroxina 1oomg 1 comp 24/24 horas Tomar 1 comprimido 1 hora antes do café da manhã (reposição e suplementação hormonal)
+
+
+#Prostata
+Finasterida- Redultor do volume prostático
+
 
 # Metodo contraceptivo 
 Tantim (ajuda a regular o período menstrual) 
 
+#Creme vaginal
+Crevagin- Trata infecções fúngicas e vulvovaginites
 
 # Não sei 
 Albendazol 40mg/ml 1 frasco 24/24 horas durante 20 dias
