@@ -1,5 +1,4 @@
        ## Medicamentos ## 
-
 # Pressão Arterial Sistólica
 Losartano 50mg de 12 em 12 horas (Eleva pressão)
 Hidroclorotiazina 25mg de 12 em 12 horas (Eleva pressão)(Causa Poliúria)
@@ -11,6 +10,8 @@ Beta 30
 
 # Dor
 Pregabalina 75g 1 comprimido de 24 em 24 horas 
+Revange (Analgesico)
+Dipirona 1 frasco-ampola ev diluido p/10cc 1 comprimido 8/8 horas oral
 
 # Antibiótico
 Cefalexina (Gram+ e Gram-)(Recomendado para gestantes 6 em 6 horas)
@@ -28,4 +29,12 @@ Riboxabana 20mg 1 comprimido 1 vezes ao dia (anticoagulante)
 Aspirina Prevent 100mg 1 comprimido 1 vez ao dia (anticoagulante)
 
 # Tireoide
-Levotiroxina 
+Levotiroxina 1oomg 1 comp 24/24 horas Tomar 1 comprimido 1 hora antes do café da manhã
+ 
+
+# Metodo contraceptivo 
+Tantim (ajuda a regular o período menstrual) 
+
+
+# Não sei 
+Albendazol 40mg/ml 1 frasco 24/24 horas durante 20 dias
