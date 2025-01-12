@@ -6,6 +6,12 @@ git add (documento)
 git commit -m "nome do commit"
 git push -u origin "nome do branch"
 
+#Erro de permissão no git push
+sudo chown -R 'whoami' /usr/local
+git commit -m main
+git push -u origin main
+git status
+
 --------------------------------------------------------------------------------
 
    ## WIFI ##
