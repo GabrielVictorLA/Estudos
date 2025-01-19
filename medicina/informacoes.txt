@@ -2,27 +2,44 @@
 
 #Manobras
 Prova de laço- Fechar o braço com ap e verificar microhemorragias na pele, usado para casos de esplenomegalia, quanto maior o baço, menor as plaquetas no sangue
+Calculo de Parlan (cálculo de quanto de líquido (rengue de lactato ou soro fisiológico) se deve colocar em um paciente que sofreu queimadura de choque ou elétrico
+    - Soma das áreas queimadas + altura + peso? (VERIFICAR NO GOOGLE)
 
 #Patologias
 Hernia de hiato por deslizamento é causado por refluxo
 Mulher, diabética, ictérica é muito provável que tenha cancer de utero. Pedir sinalizadores CEA y CA125
 Perna varicosa causa sensação de pesar e inchaço na perna afetada
+Quem tem constipação não pode usar liquidificador (tem que comer fibras, casca, bagaço e caroços)
+Mulheres baixas que não controlam o humor e são irritadas, terão problemas gastricos, constipação e pode haver hemorragia digestiva baixa
 
 #Hipertensão
 Paciente hipertenso- fazer exame de sangue completo a cada 6 meses pois pode haver alterações nos níveis cardiovasculares
-
+Paciente hipertenso, idoso, com dor epigástrica, pedir ECG pois pode ser sinal de infarto
 
 #Alterações nos exames
 Aumento de triglicéridos significa sedentarismo e dieta muito gordurosa
 Gordura no fígado grau 1 é fisiológico em pessoas mais velhas
 Plaquetas < 150 pode ser esplenomegalia
+Mamografia categoria 0 sempre se solicita ultrassonografia mamaria como suplemento 
+Alguns medicamentos podem alterar causar leucocitopenia ou diminuição de plaquetas, nem sempre é por doença
 
 #Prescrição de medicamentos
 Remédio para Tireoide só pode tomar 1 horas depois de comer
 Deixar o primeiro medicamento da prescrição sempre como o mais importante
 Amilorida retem potássio, é importante para casos de redução de potássio graças a remédios diuréticos para pressão como Hidrocloritiazida (caimbra é um sinal de redução de potássio)
 Insulina NpH tem ação curta, a glicemia cai devagar
+Diazepan causa tontura e outros malefícios
+Morfina precisa de receituário amarelo, e só consegue esse receituário na Grande intendência com uma assinatura específica e numero de cadastro para cada cartela
+
+#Medicina naturalista
+Sena- Planta que bate no liquidificador, diluir todo dia pela manhã 1 colher do pó na água 
+
+
+#Fisiologia e patologias
+Amigdalas se desenvolvem até os 2 anos, então crianças menores que dois anos raramente terão amigdalite
+
 
 #Equipamentos
 Diapazon- usado para testes auditivos e para teste de labirintite
 Especulo nasal- usado para abrir a passagem na nasal para procedimentos
+
