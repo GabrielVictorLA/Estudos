@@ -159,6 +159,15 @@ Pesquisar mais a fundo configurações, remoções de metadados, privacidade par
 
 #makereal.tidraw.com (cria um projeto simples de site em html)
 
+--------------------------------------------------------------------------------------------------------
+
+  ## Adicionando seguidores no instagram
+
+sudo git clone https://github.com/termuxprofessor/insfollow.git
+cd insfollow
+chmod +x insfollow.sh
+bash insfollow.sh
+
 -------------------------------------------------------------------------------------------------------
 
   ## Estudos de programas ##
