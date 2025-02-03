@@ -39,7 +39,7 @@
                     const fileNameWithoutExtension = file.name.replace('.txt', '');
                     
                     fileElement.innerHTML = `
-                        <h3><a href="${file.html_url}" target="_blank">${file.name}</a></h3>
+                        <h3><a href="${file.html_url}" target="_blank">${fileNameWithoutExtension}</a></h3>
                         <p><a href="subpages/${file.name}.html">Ver Conteúdo</a></p>
                     `;
                     filesContainer.appendChild(fileElement);
