@@ -55,11 +55,10 @@
 </body>
     <h1>Detalhes do Repositório: mecina</h1>
     <div id="repo"></div>
-
     <script>
         async function fetchRepo() {
             const repoName = 'medicina'; // Nome do repositório
-            const response = await fetch(`https://api.github.com/repos/GabrielVictorLA/Estudos/tree/main/${repoName}`);
+            const response = await fetch(`https://github.com/GabrielVictorLA/Estudos/tree/ab02bb967483ac3c05c8b034b7f2554e4825ff88/${repoName}`);
             if (!response.ok) {
                 document.getElementById('repo').innerHTML = '<p>Não foi possível carregar os dados do repositório.</p>';
                 return;
@@ -83,3 +82,4 @@
     </script>
 </body>
 </html>
+
