@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudos e Anotações</title>
+    <title>Detalhes do Repositório do GitHub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,33 +13,35 @@
             padding: 10px;
             margin: 10px 0;
         }
-        .repo h3 {
+        .repo h2 {
             margin: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Meus Repositórios</h1>
-    <div id="repos"></div>
+    <h1>Estudos e anotações</h1>
+    <div id="repo"></div>
 
     <script>
-        async function fetchRepos() {
-            const response = await fetch('https://api.github.com/users/GabrielVictorLA/repos');
-            const repos = await response.json();
-            const reposContainer = document.getElementById('repos');
+        async function fetchRepo() {
+            const repoName = Estudos; // Substitua pelo nome do seu repositório
+            const response = await fetch(`https://api.github.com/repos/GabrielVictorLA/${repoName}`);
+            const repo = await response.json();
+            const repoContainer = document.getElementById('repo');
 
-            repos.forEach(repo => {
-                const repoElement = document.createElement('div');
-                repoElement.className = 'repo';
-                repoElement.innerHTML = `
-                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                    <p>${repo.description || 'Sem descrição'}</p>
-                `;
-                reposContainer.appendChild(repoElement);
-            });
+            const repoElement = document.createElement('div');
+            repoElement.className = 'repo';
+            repoElement.innerHTML = `
+                <h2><a href="${repo.html_url}" target="_blank">${repo.name}</a></h2>
+                <p>${repo.description || 'Sem descrição'}</p>
+                <p><strong>Estrelas:</strong> ${repo.stargazers_count}</p>
+                <p><strong>Forks:</strong> ${repo.forks_count}</p>
+                <p><strong>Issues abertas:</strong> ${repo.open_issues_count}</p>
+            `;
+            repoContainer.appendChild(repoElement);
         }
 
-        fetchRepos();
+        fetchRepo();
     </script>
 </body>
 </html>
