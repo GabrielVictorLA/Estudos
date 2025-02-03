@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Repositório do GitHub</title>
+    <title>Detalhes do Repositório: Estudos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 20px;
         }
         .repo {
             border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
         }
         .repo h2 {
             margin: 0;
         }
+        .repo p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
-    <h1>Estudos e anotações</h1>
+    <h1>Detalhes do Repositório: Estudos</h1>
     <div id="repo"></div>
 
     <script>
         async function fetchRepo() {
-            const repoName = 'Estudos'; // Substitua pelo nome do seu repositório
-            const response = await fetch(`https://api.github.com/repos/GabrielVictorLA/Estudos`);
+            const repoName = 'Estudos'; // Nome do repositório
+            const response = await fetch(`https://api.github.com/repos/GabrielVictorLA/${repoName}`);
+            if (!response.ok) {
+                document.getElementById('repo').innerHTML = '<p>Não foi possível carregar os dados do repositório.</p>';
+                return;
+            }
             const repo = await response.json();
             const repoContainer = document.getElementById('repo');
 
             const repoElement = document.createElement('div');
             repoElement.className = 'repo';
             repoElement.innerHTML = `
-                <h2><a href="https://github.com/GabrielVictorLA/Estudos" target="_blank">Estudos</a></h2>
-                <p>${repo.description || 'Anotações'</p>
+                <h2><a href="${repo.html_url}" target="_blank">${repo.name}</a></h2>
+                <p><strong>Descrição:</strong> ${repo.description || 'Sem descrição'}</p>
                 <p><strong>Estrelas:</strong> ${repo.stargazers_count}</p>
                 <p><strong>Forks:</strong> ${repo.forks_count}</p>
                 <p><strong>Issues abertas:</strong> ${repo.open_issues_count}</p>
