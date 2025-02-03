@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos e Anotações</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .repo {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .repo h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus Repositórios</h1>
+    <div id="repos"></div>
+
+    <script>
+        async function fetchRepos() {
+            const response = await fetch('https://api.github.com/users/GabrielVictorLA/repos');
+            const repos = await response.json();
+            const reposContainer = document.getElementById('repos');
+
+            repos.forEach(repo => {
+                const repoElement = document.createElement('div');
+                repoElement.className = 'repo';
+                repoElement.innerHTML = `
+                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                    <p>${repo.description || 'Sem descrição'}</p>
+                `;
+                reposContainer.appendChild(repoElement);
+            });
+        }
+
+        fetchRepos();
+    </script>
+</body>
+</html>
