@@ -53,4 +53,33 @@
         fetchRepo();
     </script>
 </body>
+    <h1>Detalhes do Repositório: mecina</h1>
+    <div id="repo"></div>
+
+    <script>
+        async function fetchRepo() {
+            const repoName = 'medicina'; // Nome do repositório
+            const response = await fetch(`https://api.github.com/repos/GabrielVictorLA/Estudos/tree/main/${repoName}`);
+            if (!response.ok) {
+                document.getElementById('repo').innerHTML = '<p>Não foi possível carregar os dados do repositório.</p>';
+                return;
+            }
+            const repo = await response.json();
+            const repoContainer = document.getElementById('repo');
+
+            const repoElement = document.createElement('div');
+            repoElement.className = 'repo';
+            repoElement.innerHTML = `
+                <h2><a href="${repo.html_url}" target="_blank">${repo.name}</a></h2>
+                <p><strong>Descrição:</strong> ${repo.description || 'Sem descrição'}</p>
+                <p><strong>Estrelas:</strong> ${repo.stargazers_count}</p>
+                <p><strong>Forks:</strong> ${repo.forks_count}</p>
+                <p><strong>Issues abertas:</strong> ${repo.open_issues_count}</p>
+            `;
+            repoContainer.appendChild(repoElement);
+        }
+
+        fetchRepo();
+    </script>
+</body>
 </html>
