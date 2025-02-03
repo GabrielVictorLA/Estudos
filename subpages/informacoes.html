@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conteúdo do arquivo example.txt</title>
+    <title>Conteúdo do arquivo Informações</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,12 +18,12 @@
     </style>
 </head>
 <body>
-    <h1>informacoes.txt</h1>
+    <h1>Conteúdo do arquivo Informações</h1>
     <div class="content" id="file-content"></div>
 
     <script>
         async function fetchFileContent() {
-            const response = await fetch('https://raw.githubusercontent.com/GabrielVictorLA/Estudos/main/medicina/example.txt');
+            const response = await fetch('https://raw.githubusercontent.com/GabrielVictorLA/Estudos/main/medicina/informacoes.txt');
             const content = await response.text();
             document.getElementById('file-content').innerText = content;
         }
